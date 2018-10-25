@@ -1,20 +1,26 @@
 .contact {
-    padding-top: 130px;
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 140px;
 }
 
 .contact::before {
     content: "";
 
     position: absolute;
-    top: 32px;
+    top: 80px;
+    left: 160px;
 
     width: 2px;
     height: 30px;
-
-    color: #d4aab7;
+    background-color: #cb98a8;
 }
 
 .contact__title {
+    margin-top: 0;
+    margin-bottom: 40px;
+
     text-align: center;
 
     letter-spacing: 2px;
@@ -30,25 +36,28 @@
 
     font-size: 14px;
     line-height: 16px;
-    font-weight: 200;
+    font-weight: 500;
     color: #000000;
 }
 
-.contact__text span {
+.contact__type {
     display: inline;
-    margin-right: 40px;
-
     position: relative;
+    margin-right: 40px;
 }
 
-.contact__text span::after {
+.contact__type::after {
     content: "";
 
     position: absolute;
-    left: 55px;
-    top: 10px;
+    left: 60px;
+    top: 0px;
 
     height: 18px;
     width: 2px;
-    color: #97ba80;
+
+    background-color: #97ba80;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    box-shadow: 8px -2px #97ba80, -8px 2px #97ba80;
 }
