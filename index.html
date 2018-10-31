@@ -9,24 +9,31 @@
 <body>
     <header class="page-header">
         <div class="container">
-            <div class="logo">VORONINA .</div>
-            <nav class="menu">
-                <ul class="menu-list">
-                    <li class="menu-list__item">
-                        <a class="menu-list__link" href="#">Обо мне</a>  
-                    </li>
-                    <li class="menu-list__item">
-                        <a class="menu-list__link" href="#">Работы</a>  
-                    </li>
-                    <li class="menu-list__item">
-                        <a class="menu-list__link" href="#">Контакты</a>  
-                    </li>
-                </ul>
-            </nav>
+            <div class="page-header-item">
+                <div class="logo">VORONINA .</div>
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-list__item">
+                            <a class="menu-list__link" href="#">Обо мне</a>  
+                        </li>
+                        <li class="menu-list__item">
+                            <a class="menu-list__link" href="#">Стоимость</a>  
+                        </li>
+                        <li class="menu-list__item">
+                            <a class="menu-list__link" href="#">Контакты</a>  
+                        </li>
+                    </ul>
+                </nav>
+                <div class="page-header__tel"><a href="tel: +7 916 66 77 112">+7 916 66 77 112</a></div>
+            </div>
             <div class="page-header__wrapper">
                 <h1 class="page-header__title">Дарья Воронина</h1>
                 <p class="page-header__text">Food &mdash; фотограф и food &mdash; стилист в Москве и Московской области</p>
                 <a class="page-header__link" href="#">Портфолио &mdash;</a>
+            </div>
+            <div class="page-header__social">
+                <a href="#">INSTAGRAM &mdash;</a>
+                <a href="#">FACEBOOK &mdash;</a>
             </div>
         </div>
     </header>
@@ -55,7 +62,7 @@
                 <div class="portfolio-detail">
                     <b class="portfolio-detail__title">Подробное портфолио</b>
                     <p class="portfolio-detail__text">С описанием задач заказчика, полного процесса работы и финальным результатом</p>
-                    <a class="portfolio-detail__link" href="#">Скачать в PDF &mdash;</a>
+                    <a class="portfolio-detail__link" href="img/dasha.jpg" download>Скачать в PDF &mdash;</a>
                 </div>
             </div>
             <div class="about">
@@ -67,7 +74,7 @@
                 <p class="about__text">Во всех фотосьемках еды, я работаю фуд-фотографом и фуд-стилистом. Создаю креативные концепции, 
                     реализую ваши идеи. Разрабатываю рецепты, вкусно снимаю. Провожу обучение.
                 </p>
-                <p class="about__tel">Tel.: +7 916 66 77 112</p>
+                <p class="about__tel">Tel.: <a class="about__tel--link" href="tel: +7 916 66 77 112">+7 916 66 77 112</a></p>
                 <p class="about__mail">Mail.: daria.voronina@gmail.com</p>
                 <a class="about__link" href="#">Работать со мной &mdash;</a>
             </div>
@@ -113,9 +120,24 @@
                 <div class="contact__blog">
                     <p class="contact__text"><span class="contact__type">Skype</span> daria.voronina</p>
                     <p class="contact__text"><span class="contact__type">E-mail</span> daria.voronina@gmail.com</p>
-                    <p class="contact__text"><span class="contact__type">Phone</span> +7 916 66 77 112</p>
+                    <p class="contact__text"><span class="contact__type">Phone</span><a class="contact__tel--link" href="tel: +7 916 66 77 112">+7 916 66 77 112</a></p>
                 </div>
-                <div class="social-blog"></div>
+                <div class="social-blog">
+                    <ul class="social-blog__list">
+                        <li class="social-blog__item sprite sprite-fb">
+                            
+                        </li>
+                        <li class="social-blog__item sprite sprite-inst">
+                            <a class="social-blog__link" href="#"></a>
+                        </li>
+                        <li class="social-blog__item sprite sprite-vk">
+                            <a class="social-blog__link" href="#"></a>
+                        </li>
+                        <li class="social-blog__item sprite sprite-p">
+                            <a class="social-blog__link" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>

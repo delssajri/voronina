@@ -1,0 +1,35 @@
+.page-header-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.page-header__tel {
+    display: none;
+}
+
+.page-header__tel a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+@media (min-width: 420px) {
+    .page-header__tel {
+        display: block;
+        margin-right: 125px;
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: 764px) {
+    .page-header__tel { 
+        margin-right: 398px;
+        padding-top: 40px;
+    }
+    
+    .page-header__tel a {
+        color: #949494;
+    }
+}

@@ -31,6 +31,7 @@
 
 .portfolio-detail__link {
     display: block;
+    position: relative;
     width: 155px;
     margin-top: 26px;
     padding-bottom: 8px;
@@ -42,5 +43,18 @@
     color: #ffffff;
 
     border-bottom: 2px solid #ffffff;
+}
+
+.portfolio-detail__link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 164px;
+
+    width: 20px;
+    height: 20px;
+
+    background: url(../img/pdf.png) no-repeat 50% 50%;
+
 }
 

@@ -1,9 +1,54 @@
 .menu-list {
-    display: none;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
 
     margin: 0;
-    padding: 0;
+    padding: 38px 0 0;
 
     list-style: none;
+}
 
+.menu-list::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 19px;
+
+    width: 25px;
+
+    background: url("../img/menu.png") no-repeat 50% 50%;
+}
+
+.menu-list__link {
+    text-decoration: none;
+
+    font-size : 18px;
+    line-height: 22px;
+    font-weight: 200;
+    color: #949494;
+}
+
+.menu-list__item {
+    display: inline-block;
+    margin-right: 90px;
+}
+
+.menu-list__item:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 763px) {
+    .menu-list {
+        display: none; 
+    }
+}
+
+@media (min-width: 764px) {
+    .menu-list {
+        display: block;
+    }
 }

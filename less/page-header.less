@@ -3,17 +3,13 @@
 
     background: url("../img/dasha.jpg") no-repeat 0% 0%;
     background-size: cover;
-    z-index: 1000;
 }
 
 .page-header__wrapper {
     width: 295px;
-    padding-top: 82px;
+    padding-top: 150px;
     padding-left: 17px;
     padding-bottom: 103px;
-
-    border: 4px solid #709c54;
-    border-left: none;
 }
 
 .page-header__title {
@@ -31,6 +27,7 @@
 
     font-size: 16px;
     line-height: 24px;
+    font-weight: 200;
 }
 
 .page-header__link {
@@ -47,4 +44,50 @@
     color: #ffffff;
 
     border-bottom: 2px solid #ffffff;
+}
+
+@media (min-width: 420px) {
+    .page-header {
+        background: url("../img/bg.jpg") no-repeat 100% 0%;
+    }
+
+    .page-header__title {
+        margin-bottom: 26px;
+    
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: 400;
+        color: #000000;
+    }
+
+    .page-header__text {
+        margin-bottom: 36px;
+
+        color: #000000;
+    }
+
+    .page-header__link {
+        color: #000000;
+    }
+
+    .page-header__wrapper {
+        position: relative;
+
+        width: 300px;
+        padding-top: 266px;
+        padding-left: 60px;
+        padding-bottom: 214px;
+    }
+
+    .page-header__wrapper::after {
+        position: absolute;
+        content: "";
+        top: 102px;
+        left: 390px;
+
+        width: 322px;
+        height: 500px;
+        
+        background: url("../img/dashap.jpg") no-repeat 50% 50%;
+    }
 }
